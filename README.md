@@ -1,3 +1,12 @@
+# Commands Used in Task 2
+
+1. Count the number of rows in the file:
+   ```bash
+   cat satelite_temperature_data.csv | wc -l
+sort -u satelite_temperature_data.csv -o satelite_temperature_data.csv
+sort -t, -k2 -nr data/satelite_temperature_data.csv | head -n 6 > analyzed/top-5-highest-temparatures.csv
+sort -t, -k2 -n data/satelite_temperature_data.csv | head -n 6 > analyzed/top-5-lowest-temparatures.csv
+grep 'CountryName' data/satelite_temperature_data.csv > analyzed/country-heat_data.csv
 # 1. Delete a useless file:
 rm data/test-1
 # Deleted the file `test-1` from the `data` directory.
